@@ -2,6 +2,16 @@ class Api::UsersController < ApplicationController
   def create
     user = User.new(
       name: params[:name],
+      city: params[:city],
+      state: params[:state],
+      birthdate: params[:birthdate],
+      age: params[:age],
+      height: params[:height],
+      weight: params[:weight],
+      position: params[:position],
+      shoots: params[:shoots],
+      team: params[:team],
+      coach: params[:coach],
       email: params[:email],
       password: params[:password],
       password_confirmation: params[:password_confirmation]
