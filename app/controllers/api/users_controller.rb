@@ -34,6 +34,30 @@ class Api::UsersController < ApplicationController
     render "show_users.json.jb"
   end
 
+  def update
+    input = params[:id]
+    @user = User.find_by(id: input)
+    @user.name = params[:name] || @user.name
+    @user.city = params[:city] || @user.city
+    @user.state = params[:state] || @user.state
+    @user.birthdate = params[:birthdate] || @user.birthdate
+    @user.height = params[:height] || @user.height
+    @user.weight = params[:weight] || @user.weight
+    @user.position = params[:position] || @user.position
+    @user.shoots = params[:shoots] || @user.shoots
+    @user.team = params[:team] || @user.team
+    @user.coach = params[:coach] || @user.coach
+    @user.email = params[:email] || @user.email
+    @user.save
+    render "show_users.json.jb"
+  end
+
+  def destroy
+    input = params[:id]
+    user = User.find_by(id: input)
+    user.destroy
+    render json: { message: "This item succesfully destroyed" }
+  end
 
 
 end
