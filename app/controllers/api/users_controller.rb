@@ -23,4 +23,8 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  def index
+    @user = User.all
+    render "index_users.json.jb"
+  end
 end

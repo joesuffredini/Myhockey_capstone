@@ -7,10 +7,18 @@ Rails.application.routes.draw do
   #   get "/photos" => "photos#index"
   # end
 
-  # Create routes for user create and user session
+  # Create route for user sessions
   namespace :api do
-    post "/users" => "users#create"
     post "/sessions" => "sessions#create"
+  end
+
+  # CRUD routes for USERS
+  namespace :api do
+    get "/user" => "users#index"
+    # get "/user/:id" => "users#show"
+    post "/user" => "users#create"
+    # patch "/user/:id" => "users#update"
+    # delete "/user/:id" => "users#destroy"
   end
 
 end
