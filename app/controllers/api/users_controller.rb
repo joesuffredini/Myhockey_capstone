@@ -27,4 +27,13 @@ class Api::UsersController < ApplicationController
     @user = User.all
     render "index_users.json.jb"
   end
+
+  def show
+    input = params[:id]
+    @user = User.find_by(id: input)
+    render "show_users.json.jb"
+  end
+
+
+
 end

@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   # CRUD routes for USERS
   namespace :api do
     get "/user" => "users#index"
-    # get "/user/:id" => "users#show"
+    get "/user/:id" => "users#show"
     post "/user" => "users#create"
     # patch "/user/:id" => "users#update"
     # delete "/user/:id" => "users#destroy"
