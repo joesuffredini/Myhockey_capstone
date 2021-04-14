@@ -21,4 +21,13 @@ Rails.application.routes.draw do
     delete "/user/:id" => "users#destroy"
   end
 
+  # CRUD routes for Schools
+  namespace :api do
+    get "/user" => "users#index"
+    get "/user/:id" => "users#show"
+    post "/user" => "users#create"
+    patch "/user/:id" => "users#update"
+    delete "/user/:id" => "users#destroy"
+  end
+
 end
