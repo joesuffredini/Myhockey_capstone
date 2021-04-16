@@ -11,4 +11,5 @@
     team: @user.team,
     coach: @user.coach,
     email: @user.email,
+    profile: @user.joins(:recruit_info)
 }

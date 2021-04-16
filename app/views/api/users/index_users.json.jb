@@ -1,4 +1,4 @@
-@user.map do |user|
+@users.map do |user|
   {
     id: user.id,
     name: user.name,
@@ -12,5 +12,7 @@
     team: user.team,
     coach: user.coach,
     email: user.email,
+    school: user.schools.uniq,
+    recruit: user.recruits.uniq,
   }
 end

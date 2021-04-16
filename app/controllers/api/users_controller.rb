@@ -24,7 +24,15 @@ class Api::UsersController < ApplicationController
   end
 
   def index
-    @user = User.all
+    @users = User.all
+    if params[:school]
+      school = Schools.find_by(name: params[:school])
+      @users = school.users
+    end
+    if params[:recruit]
+      school = Schools.find_by(name: params[:recruit])
+      @users = recruit.users
+    end
     render "index_users.json.jb"
   end
 

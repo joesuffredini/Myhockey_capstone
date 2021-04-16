@@ -31,9 +31,14 @@ Rails.application.routes.draw do
   end
 
 # CRUD routes for Recruiting Information
-namespace :api do
-  get "/recruit" => "recruits#index"
-  get "/recruit/:id" => "recruits#show"
-end
+  namespace :api do
+    get "/recruit" => "recruits#index"
+    get "/recruit/:id" => "recruits#show"
+  end
+
+# CRUD routes for Join table
+  namespace :api do
+    post "/recruitinfo" => "recruit_infos#create"
+  end
 
 end
