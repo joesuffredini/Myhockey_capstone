@@ -1,0 +1,12 @@
+@recruit.map do |recruit|
+  {
+      id: recruit.id,
+      school: recruit.school,
+      player: recruit.player,
+      position: recruit.position,
+      height: recruit.height,
+      weight: recruit.weight,
+      birthdate: recruit.birthdate,
+      year: recruit.year,
+  }
+  end

@@ -31,12 +31,9 @@ Rails.application.routes.draw do
   end
 
 # CRUD routes for Recruiting Information
-# namespace :api do
-#   # get "/school" => "schools#index"
-#   # get "/school/:id" => "schools#show"
-#   # post "/school" => "schools#create"
-#   # patch "/school/:id" => "schools#update"
-#   # delete "/school/:id" => "schools#destroy"
-# end
+namespace :api do
+  get "/recruit" => "recruits#index"
+  get "/recruit/:id" => "recruits#show"
+end
 
 end
