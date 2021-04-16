@@ -24,6 +24,43 @@ class Api::SchoolsController < ApplicationController
     end
   end
 
+    def index
+      @school = School.all
+      render "index_schools.json.jb"
+    end
+  
+    def show
+      input = params[:id]
+      @school = School.find_by(id: input)
+      render "show_schools.json.jb"
+    end
+  
+    def update
+      input = params[:id]
+      @school = School.find_by(id: input)
+      @school.name = params[:name] || @school.name
+      @school.location = params[:location] || @school.location
+      @school.nickname = params[:nickname] || @school.nickname
+      @school.enrollment = params[:enrollment] || @school.enrollment
+      @school.conference = params[:conference] || @school.conference
+      @school.rink = params[:rink] || @school.rink
+      @school.head_coach = params[:head_coach] || @school.head_coach
+      @school.assistant_coach1 = params[:assistant_coach1] || @school.assistant_coach1
+      @school.assistant_coach2 = params[:assistant_coach2] || @school.assistant_coach2
+      @school.hockey_office = params[:hockey_office] || @school.hockey_office
+      @school.email = params[:email] || @school.email
+      @school.save
+      render "show_schools.json.jb"
+    end
+  
+    def destroy
+      input = params[:id]
+      school = School.find_by(id: input)
+      school.destroy
+      render json: { message: "This item succesfully destroyed" }
+    end
+  
+  
 
 
 end
