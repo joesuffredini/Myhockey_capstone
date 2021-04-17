@@ -23,6 +23,7 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  # Adds join table information
   def index
     @users = User.all
     if params[:school]
