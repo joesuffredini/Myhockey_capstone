@@ -14,4 +14,6 @@ class Api::RecruitInfosController < ApplicationController
   
   end
 
+  
+
 end

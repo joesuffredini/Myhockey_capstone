@@ -34,6 +34,7 @@ Rails.application.routes.draw do
   namespace :api do
     get "/recruit" => "recruits#index"
     get "/recruit/:id" => "recruits#show"
+    delete "/recruit/:id" => "recruits#destroy"
   end
 
 # CRUD routes for Join table
