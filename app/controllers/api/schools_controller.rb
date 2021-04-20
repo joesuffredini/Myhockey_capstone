@@ -3,7 +3,6 @@ class Api::SchoolsController < ApplicationController
 
   def create
     @school = School.new({
-      id: params[:id],
       name: params[:name],
       location: params[:location],
       nickname: params[:nickname],
