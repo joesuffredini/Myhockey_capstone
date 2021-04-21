@@ -1,7 +1,7 @@
 @recruit.map do |recruit|
   {
       id: recruit.id,
-      school: recruit.school,
+      school: recruit.school[:name],
       player: recruit.player,
       position: recruit.position,
       height: recruit.height,

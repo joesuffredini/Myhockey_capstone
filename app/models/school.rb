@@ -10,6 +10,3 @@ def recruits
   Recruit.where(school_id: id) 
 end
 
-# def recruit_filter
-#   Recruit.where(school_id: id).map{ |x| x[:player] }  
-# end

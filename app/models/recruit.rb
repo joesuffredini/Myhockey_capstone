@@ -6,7 +6,8 @@ class Recruit < ApplicationRecord
 end
 
 def school
-  Recruit.find_by(id: school_id)
+  # Recruit.find_by(id: school_id)
+  Recruit.where(school_id: id)
 end
 
 
