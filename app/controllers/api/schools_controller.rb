@@ -14,6 +14,7 @@ class Api::SchoolsController < ApplicationController
       assistant_coach2: params[:assistant_coach2],
       hockey_office: params[:hockey_office],
       email: params[:email],
+      image: params[:image],
       })
     # Happy/sad path testing
     if  @school.save
@@ -48,6 +49,7 @@ class Api::SchoolsController < ApplicationController
       @school.assistant_coach2 = params[:assistant_coach2] || @school.assistant_coach2
       @school.hockey_office = params[:hockey_office] || @school.hockey_office
       @school.email = params[:email] || @school.email
+      @school.image = params[:image] || @school.image
       @school.save
       render "show_schools.json.jb"
     end

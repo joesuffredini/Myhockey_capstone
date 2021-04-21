@@ -12,7 +12,7 @@
     assistant_coach2: school.assistant_coach2,
     hockey_office: school.hockey_office,
     email: school.email,
-   
+    image: school.image,
     recruits_player: school.recruits.map{ |x| x[:player]},
     recruits_position: school.recruits.map{ |x| x[:position]},
     recruits_height: school.recruits.map{ |x| x[:height]},
