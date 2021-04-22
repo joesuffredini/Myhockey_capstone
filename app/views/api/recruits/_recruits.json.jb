@@ -1,0 +1,11 @@
+{
+      id: recruit.id,
+      school: recruit.school[:name],
+      player: recruit.player,
+      position: recruit.position,
+      height: recruit.height,
+      weight: recruit.weight,
+      birthdate: recruit.birthdate,
+      year: recruit.year,
+      school_id: recruit.school_id
+  }
