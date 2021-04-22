@@ -16,6 +16,12 @@ class Api::RecruitInfosController < ApplicationController
     render "index_recruitinfo.json.jb"
   end
 
+  def show
+    input = params[:id]
+    @recruit_infos = RecruitInfo.find_by(id: input)
+    render "show_recruitinfo.json.jb"
+  end
+
   
 
 end

@@ -9,3 +9,4 @@ def recruits
   Recruit.where(school_id: id) 
 end
 
+

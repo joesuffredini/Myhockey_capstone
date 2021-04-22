@@ -2,7 +2,7 @@ class Api::SchoolsController < ApplicationController
 
 
   def create
-    @school = School.new({
+    @schools = School.new({
       name: params[:name],
       location: params[:location],
       nickname: params[:nickname],
@@ -17,7 +17,7 @@ class Api::SchoolsController < ApplicationController
       image: params[:image],
       })
     # Happy/sad path testing
-    if  @school.save
+    if  @schools.save
       render "show_schools.json.jb"
     else 
       render json: { errors: @school.errors.full_messages }, status: 406
@@ -25,7 +25,7 @@ class Api::SchoolsController < ApplicationController
   end
 
     def index
-      @school = School.all
+      @schools = School.all
       render "index_schools.json.jb"
     end
   

@@ -3,3 +3,4 @@ class RecruitInfo < ApplicationRecord
   belongs_to :school
 end
 
+

@@ -1,21 +1,2 @@
-{
-    id: @school.id,
-    name: @school.name,
-    location: @school.location,
-    nickname: @school.nickname,
-    enrollment: @school.enrollment,
-    conference: @school.conference,
-    rink: @school.rink,
-    head_coach: @school.head_coach,
-    assistant_coach1:  @school.assistant_coach1,
-    assistant_coach2: @school.assistant_coach2,
-    hockey_office: @school.hockey_office,
-    email: @school.email,
-    image: @school.image,
-    recruits: @school.recruits,
-    recruits_players: @school.recruits.map{ |x| x[:player]},
-    recruits_position: @school.recruits.map{ |x| x[:position]},
-    recruits_height: @school.recruits.map{ |x| x[:height]},
-    recruits_weight: @school.recruits.map{ |x| x[:weight]},
-    recruits_year: @school.recruits.map{ |x| x[:year]},
-}
+
+render partial: "schools.json.jb", locals: { school: @school }

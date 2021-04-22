@@ -42,6 +42,7 @@ Rails.application.routes.draw do
   namespace :api do
     post "/recruitinfo" => "recruit_infos#create"
     get "/recruitinfo" => "recruit_infos#index"
+    get "/recruitinfo/:id" => "recruit_infos#show"
   end
 
 end

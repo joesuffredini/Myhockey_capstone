@@ -1,7 +1,4 @@
 {
-user: @recruitinfo.user_id,
-school: @recruitinfo.school_id,
-recruit: @recruitinfo.recruit_id,
-
-
+  user: @recruit_infos.user.name,
+  school: @recruit_infos.school.name,
 }
