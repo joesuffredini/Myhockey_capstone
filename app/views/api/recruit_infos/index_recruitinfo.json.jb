@@ -1,0 +1,6 @@
+@recruit_infos.map do |recruitinfo|
+  {
+    user: recruitinfo.user.name,
+    school: recruitinfo.school.name,
+  }
+end

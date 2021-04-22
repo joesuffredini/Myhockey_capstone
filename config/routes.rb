@@ -41,6 +41,7 @@ Rails.application.routes.draw do
 # CRUD routes for Join table
   namespace :api do
     post "/recruitinfo" => "recruit_infos#create"
+    get "/recruitinfo" => "recruit_infos#index"
   end
 
 end

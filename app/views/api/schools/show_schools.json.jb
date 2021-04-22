@@ -13,7 +13,7 @@
     email: @school.email,
     image: @school.image,
     recruits: @school.recruits,
-    recruits_player: @school.recruits.map{ |x| x[:player]},
+    recruits_players: @school.recruits.map{ |x| x[:player]},
     recruits_position: @school.recruits.map{ |x| x[:position]},
     recruits_height: @school.recruits.map{ |x| x[:height]},
     recruits_weight: @school.recruits.map{ |x| x[:weight]},

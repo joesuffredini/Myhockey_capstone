@@ -26,14 +26,14 @@ class Api::UsersController < ApplicationController
   # Adds join table information
   def index
     @users = User.all
-    if params[:school]
-      school = Schools.find_by(name: params[:school])
-      @users = school.users
-    end
-    if params[:recruit]
-      school = Schools.find_by(name: params[:recruit])
-      @users = recruit.users
-    end
+    # if params[:school]
+    #   school = School.find_by(name: params[:school])
+    #   @users = school.users
+    # end
+    # if params[:recruit]
+    #   recruit = Recruit.find_by(player: params[:recruit])
+    #   @users = recruit.users
+    # end
     render "index_users.json.jb"
   end
 

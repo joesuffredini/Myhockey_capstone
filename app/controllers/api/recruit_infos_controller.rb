@@ -1,17 +1,19 @@
 class Api::RecruitInfosController < ApplicationController
   def create
-    @recruitinfo = RecruitInfo.new({
-      user_id: params[:user_id],  
-      school_id: params[:school_id], 
-      recruit_id: params[:recruit_id]
-
+    recruitinfo = RecruitInfo.new({
+      school_id: params[:school],
+      user_id: params[:user],
      })
-     if @recruitinfo.save
-      render "show_recruitinfo.json.jb"
+     if recruitinfo.save
+      render json: { message: "This item succesfully created" }
     else
-      render json: { errors: @recruitinfo.errors.full_messages }, status:406
+      render json: { errors: recruitinfo.errors.full_messages }, status:406
     end
+  end
   
+  def index
+    @recruit_infos = RecruitInfo.all
+    render "index_recruitinfo.json.jb"
   end
 
   

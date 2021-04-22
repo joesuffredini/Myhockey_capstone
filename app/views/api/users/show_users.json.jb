@@ -11,6 +11,4 @@
     team: @user.team,
     coach: @user.coach,
     email: @user.email,
-    school: @user.schools.uniq,
-    recruit: @user.recruits.uniq,
 }

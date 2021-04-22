@@ -4,5 +4,4 @@ class User < ApplicationRecord
 
   has_many  :recruit_infos
   has_many  :schools, through: :recruit_infos
-  has_many  :recruits, through: :recruit_infos
 end
