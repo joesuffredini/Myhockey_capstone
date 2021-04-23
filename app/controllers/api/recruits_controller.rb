@@ -2,8 +2,12 @@ class Api::RecruitsController < ApplicationController
 
   
     def index
-      @recruit = Recruit.all
-      render "index_recruits.json.jb"
+      if current_user
+        @recruit = Recruit.all
+        render "index_recruits.json.jb"
+      else
+        render json: []
+      end
     end
   
     def show

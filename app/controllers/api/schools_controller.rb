@@ -25,8 +25,12 @@ class Api::SchoolsController < ApplicationController
   end
 
     def index
-      @schools = School.all
-      render "index_schools.json.jb"
+      if current_user
+        @schools = School.all
+        render "index_schools.json.jb"
+      else
+        render json: []
+      end
     end
   
     def show
