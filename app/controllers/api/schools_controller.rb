@@ -16,6 +16,8 @@ class Api::SchoolsController < ApplicationController
       email: params[:email],
       image: params[:image],
       url: param[:url],
+      academics: param[:academics],
+      recruitclass: param[:recruitclass],
       })
     # Happy/sad path testing
     if  @schools.save
@@ -56,6 +58,8 @@ class Api::SchoolsController < ApplicationController
       @school.email = params[:email] || @school.email
       @school.image = params[:image] || @school.image
       @school.url = params[:url] || @school.url
+      @school.academics = params[:academics] || @school.academics
+      @school.recruitclass = params[:recruitclass] || @school.recruitclass
       @school.save
       render "show_schools.json.jb"
     end
