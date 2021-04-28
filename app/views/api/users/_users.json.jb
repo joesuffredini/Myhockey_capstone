@@ -12,4 +12,6 @@
   coach: user.coach,
   email: user.email,  
   schools: user.schools.map{ |x| x[:name]}.uniq,
+  image: user.schools.map{ |x| x[:image]}.uniq,
+  test: user.schools[0][:image],
 }

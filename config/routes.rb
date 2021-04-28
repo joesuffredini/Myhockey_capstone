@@ -36,6 +36,7 @@ Rails.application.routes.draw do
     get "/recruit/:id" => "recruits#show"
     delete "/recruit/:id" => "recruits#destroy"
     post "/recruit" => "recruits#create"
+    patch "/recruit/:id" => "recruits#update"
   end
 
 # CRUD routes for Join table

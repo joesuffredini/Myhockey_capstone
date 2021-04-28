@@ -1,4 +1,5 @@
 {
   user: @recruit_infos.user.name,
   school: @recruit_infos.school.name,
+  schools: @recruitinfo.schools.nickname,
 }

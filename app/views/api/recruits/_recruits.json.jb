@@ -7,5 +7,6 @@
       weight: recruit.weight,
       birthdate: recruit.birthdate,
       year: recruit.year,
-      school_id: recruit.school_id
+      school_id: recruit.school_id,
+      image: recruit.image,
   }

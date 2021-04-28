@@ -25,7 +25,8 @@ class Api::RecruitsController < ApplicationController
         weight: params[:weight],
         birthdate: params[:birthdate],
         year: params[:year],
-        school_id: params[:school_id]
+        school_id: params[:school_id],
+        image: params[:image],
         })
       # Happy/sad path testing
       if  @recruit.save
@@ -34,6 +35,23 @@ class Api::RecruitsController < ApplicationController
         render json: { errors: @recruit.errors.full_messages }, status: 406
       end
     end
+
+    def update
+      input = params[:id]
+      @recruit = Recruit.find_by(id: input)
+      @recruit.player = params[:player] || @recruit.player
+      @recruit.position = params[:position] || @recruit.position
+      @recruit.height = params[:height] || @recruit.height
+      @recruit.weight = params[:weight] || @recruit.weight
+      @recruit.birthdate = params[:birthdate] || @recruit.birthdate
+      @recruit.year = params[:year] || @recruit.year
+      @recruit.school_id = params[:school_id] || @recruit.school_id
+      @recruit.image = params[:image] || @recruit.image
+      @recruit.save
+      render "show_recruits.json.jb"
+    end
+
+
 
     def destroy
       input = params[:id]
