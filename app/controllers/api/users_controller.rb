@@ -52,6 +52,7 @@ class Api::UsersController < ApplicationController
     @user.city = params[:city] || @user.city
     @user.state = params[:state] || @user.state
     @user.birthdate = params[:birthdate] || @user.birthdate
+    @user.age = params[:age] || @user.age
     @user.height = params[:height] || @user.height
     @user.weight = params[:weight] || @user.weight
     @user.position = params[:position] || @user.position
