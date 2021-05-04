@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_28_023631) do
+ActiveRecord::Schema.define(version: 2021_05_03_165607) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,16 @@ ActiveRecord::Schema.define(version: 2021_04_28_023631) do
     t.string "image"
   end
 
+  create_table "rosters", force: :cascade do |t|
+    t.string "name"
+    t.string "position"
+    t.string "shoots"
+    t.string "experience"
+    t.integer "school_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "schools", force: :cascade do |t|
     t.string "name"
     t.string "location"
@@ -54,6 +64,7 @@ ActiveRecord::Schema.define(version: 2021_04_28_023631) do
     t.string "url"
     t.string "recruitclass"
     t.string "academics"
+    t.string "teamid"
   end
 
   create_table "users", force: :cascade do |t|

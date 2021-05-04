@@ -39,6 +39,16 @@ Rails.application.routes.draw do
     patch "/recruit/:id" => "recruits#update"
   end
 
+# CRUD routes for Roster Information
+  namespace :api do 
+    get "/roster" => "rosters#index"
+    get "/roster/:id" => "rosters#show"
+    delete "/roster/:id" => "rosters#destroy"
+    post "/roster" => "rosters#create"
+    patch "/roster/:id" => "rosters#update"
+  end
+
+
 # CRUD routes for Join table
   namespace :api do
     post "/recruitinfo" => "recruit_infos#create"

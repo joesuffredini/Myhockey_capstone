@@ -1,0 +1,3 @@
+@roster.map do |roster|
+  render partial: "rosters.json.jb", locals: { roster: roster }
+  end

@@ -15,9 +15,12 @@
     url: school.url,
     academics: school.academics,
     recruitclass: school.recruitclass,
+    recruit: school.recruits,
+    roster: school.rosters,
     recruits_player: school.recruits.map{ |x| x[:player]},
     recruits_position: school.recruits.map{ |x| x[:position]},
     recruits_height: school.recruits.map{ |x| x[:height]},
     recruits_weight: school.recruits.map{ |x| x[:weight]},
     recruits_year: school.recruits.map{ |x| x[:year]},
+    rosters_player: school.rosters.map{ |x| x[:name]},
 }

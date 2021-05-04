@@ -1,0 +1,8 @@
+{
+      id: roster.id,
+      school: roster.school[:name],
+      name: roster.name,
+      position: roster.position,
+      shoots: roster.shoots,
+      year: roster.experience,
+  }
