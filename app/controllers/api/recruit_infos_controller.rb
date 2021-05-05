@@ -22,6 +22,7 @@ class Api::RecruitInfosController < ApplicationController
     render "show_recruitinfo.json.jb"
   end
 
+
   
 
 end

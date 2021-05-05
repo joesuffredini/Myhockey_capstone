@@ -1,6 +1,7 @@
 {
       id: roster.id,
       school: roster.school[:name],
+      image: roster.school[:image],
       name: roster.name,
       position: roster.position,
       shoots: roster.shoots,

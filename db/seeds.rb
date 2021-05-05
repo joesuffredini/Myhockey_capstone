@@ -2,9 +2,38 @@
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 
 #  This is for Recruits seeding
-# Recruit.create({player: "Paul Davey", position: "C", height: "6 0", weight: 180, birthdate: "08/10/1995", year: 2022, school_id:1})
-# Recruit.create({player: "Jack Dempsey", position: "LW", height: "6 0", weight: 180, birthdate: "08/10/1995", year: 2022, school_id:2})
-# Recruit.create({player: "Bill Smith", position: "LD", height: "6 4", weight: 210, birthdate: "08/10/1999", year: 2023, school_id:2})
+
+
+
+# Michigan State Recruits
+#2021
+# Recruit.create({player:	"Matt Basgall",	position:	"D",	height:	"6 -3",	weight:	"190",	year:	2021,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png", school_id:38})
+# Recruit.create({player:	"Jeremy Davidson",	position:	"F",	height:	"6-2",	weight:	"218",	year:	2021,	    image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+# Recruit.create({player:	"Zane Demsey",	position:	"D",	height:	"5-11",	weight:	"194",	year:	2021,	  image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+# Recruit.create({player:	"Michael Feenstra",	position:	"D",	height:	"5-7",	weight:	"139",	year:	2021,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+# Recruit.create({player:	"David Gucciardi",	position:	"D",	height:	"6-0",	weight:	"190",	year:	2021,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+# Recruit.create({player:	"Tanner Kelly",	position:	"D", height:	"6-1",	weight:	"209",	year:	2021,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+# Recruit.create({player:	"Mitch Lewandowski",	position:	"F",	height:	"5-10",	weight:	"168",	year:	2021,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+# Recruit.create({player:	"Erik Middendorf",	position:	"F", height:	"5-10",	weight:	"174",	year:	2021,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+# Recruit.create({player:	"Daniel Russel",	position:	"F",	height:	"6-0",	weight:	"165",	year:	2021,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+# Recruit.create({player:	"Tiernan Shoudy",	position:	"F",	height:	"6-3",	weight:	"174",	year:	2021,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+# Recruit.create({player:	"Winter Wallace",	position:	"F",	height:	"6-1",	weight:	"165",	year:	2021,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+# Recruit.create({player:	"Jack Williams",	position:	"G",	height:	"6-1",	weight:	"165",	year:	2021,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+#2022
+# Recruit.create({player:	"Nikita Tarasevich",	position:	"F",	height:	"6-1",	weight:	"165",	year:	2022,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+#2023
+# Recruit.create({player:	"Owen Baker",	position:	"F",	height:	"5-9",	weight:	"165",	year:	2023,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+# Recruit.create({player:	"Dominic Elloit",	position:	"D",	height:	"5-9",	weight:	"150",	year:	2023,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+# Recruit.create({player:	"Tucker Shedd",	position:	"D",	height:	"6-0",	weight:	"181",	year:	2023,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+# Recruit.create({player:	"Justin Varner",	position:	"D",	height:	"6-0",	weight:	"174",	year:	2023,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
+
+
+
+
+
+
+
+
 
 # This is for D1 College teams seeding
   # @teams = HTTP.get("http://api.sportradar.us/ncaamh-t3/league/hierarchy.json?sports_api[:api_key]")
