@@ -27,9 +27,57 @@
 # Recruit.create({player:	"Tucker Shedd",	position:	"D",	height:	"6-0",	weight:	"181",	year:	2023,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
 # Recruit.create({player:	"Justin Varner",	position:	"D",	height:	"6-0",	weight:	"174",	year:	2023,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png",	school_id:38})
 
+# Ferris State
+#2021
+# Recruit.create({player:	"Drew Cooper",	position:	"D",	height:	"6 -1",	weight:	"185",	year:	2021,	image:	 " https://www.collegehockeynews.com/images/logos/fsu.png", school_id:24})
+# Recruit.create({player:	"Nico DeVita",	position:	"D",	height:	"6 -1",	weight:	"190",	year:	2021,	image:	 " https://www.collegehockeynews.com/images/logos/fsu.png", school_id:24})
+# Recruit.create({player:	"Kaleb Ergang",	position:	"F",	height:	"5 -10",	weight:	"160",	year:	2021,	image:	 " https://www.collegehockeynews.com/images/logos/fsu.png", school_id:24})
+# Recruit.create({player:	"Bradley Marek",	position:	"F",	height:	"6 -2",	weight:	"212",	year:	2021,	image:	 " https://www.collegehockeynews.com/images/logos/fsu.png", school_id:24})
+# Recruit.create({player:	"Nick Nardecchia",	position:	"F",	height:	"5 -10",	weight:	"174",	year:	2021,	image:	 " https://www.collegehockeynews.com/images/logos/fsu.png", school_id:24})
+# Recruit.create({player:	"Sam Skinner",	position:	"D",	height:	"5 -9",	weight:	"172",	year:	2021,	image:	 " https://www.collegehockeynews.com/images/logos/fsu.png", school_id:24})
 
+# Miami-Ohio
+#2021
+# Recruit.create({player:	"Frankie Carogioieelo",	position:	"C",	height:	"5 -10",	weight:	"165",	year:	2021,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
+# Recruit.create({player:	"Will Cullen",	position:	"D",	height:	"6 -0",	weight:	"183",	year:	2021,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
+# Recruit.create({player:	"Nick Desantis",	position:	"F",	height:	"5 -9",	weight:	"165",	year:	2021,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
+# Recruit.create({player:	"Ben Dexheimer",	position:	"D",	height:	"5 -8",	weight:	"150",	year:	2021,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
+# Recruit.create({player:	"Nicholas Donato",	position:	"D",	height:	"5 -10",	weight:	"170",	year:	2021,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
+# Recruit.create({player:	"Kienan Draper",	position:	"F",	height:	"6 -0",	weight:	"187",	year:	2021,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
+# Recruit.create({player:	"PJ Feltcher",	position:	"F",	height:	"6 -2",	weight:	"183",	year:	2021,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
+# Recruit.create({player:	"Chase Gresock",	position:	"F",	height:	"5 -11",	weight:	"201",	year:	2021,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
+# Recruit.create({player:	"Alex Murray",	position:	"D",	height:	"6 -4",	weight:	"174",	year:	2021,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
+# Recruit.create({player:	"Logan Neaton",	position:	"G",	height:	"5 -11",	weight:	"205",	year:	2021,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
+# Recruit.create({player:	"Red Savage",	position:	"F",	height:	"6 -0",	weight:	"174",	year:	2021,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
+# Recruit.create({player:	"Primo Self",	position:	"F",	height:	"5 -9",	weight:	"170",	year:	2021,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
+# Recruit.create({player:	"John Waldron",	position:	"F",	height:	"6 -1",	weight:	"181",	year:	2021,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
+#2022
+# Recruit.create({player:	"Gibson Homer",	position:	"G",	height:	"6 -5",	weight:	"194",	year:	2022,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
+# Recruit.create({player:	"Declan Ride",	position:	"D",	height:	"6 -6",	weight:	"205",	year:	2022,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
+# Recruit.create({player:	"Dominick Rivelli",	position:	"F",	height:	"5 -10",	weight:	"165",	year:	2022,	image:	 "https://miamiredhawks.com/images/nav_logo.svg", school_id:33})
 
-
+# Penn State
+#2021
+# Recruit.create({player:	"Joushua Barnes",	position:	"F",	height:	"5 -8",	weight:	"176",	year:	2021,	image: "https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+# Recruit.create({player:	"Jeff Bertrand",	position:	"F",	height:	"6 -1",	weight:	"176",	year:	2021,	image: "https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+# Recruit.create({player:	"Ben Copeland",	position:	"F",	height:	"6 -1",	weight:	"172",	year:	2021,	image:"https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+# Recruit.create({player:	"Jarod Crespo",	position:	"D",	height:	"6 -0",	weight:	"209",	year:	2021,	image:"https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+# Recruit.create({player:	"Dane Dowiak",	position:	"F",	height:	"5 -10",	weight:	"172",	year:	2021,	image:"https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+# Recruit.create({player:	"Carson Dyck",	position:	"F",	height:	"6 -1",	weight:	"176",	year:	2021,	image:"https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+# Recruit.create({player:	"Daniyal Dzhanlyev",	position:	"D",	height:	"5 -4",	weight:	"137",	year:	2021,	image:"https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+# Recruit.create({player:	"Dyllan Gratton",	position:	"F",	height:	"6 -10",	weight:	"174",	year:	2021,	image:"https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+# Recruit.create({player:	"Ryan Kirwan",	position:	"D",	height:	"6 -2",	weight:	"194",	year:	2021,	image:"https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+# Recruit.create({player:	"Simon Mack",	position:	"D",	height:	"5 -9",	weight:	"181",	year:	2021,	image:"https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+# Recruit.create({player:	"Ben Schoen",	position:	"C",	height:	"5 -8",	weight:	"154",	year:	2021,	image:"https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+#2022
+# Recruit.create({player:	"Owen Mclaughlin",	position:	"F",	height:	"5 -10",	weight:	"146",	year:	2022,	image:"https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+# Recruit.create({player:	"Drew Tsakounis",	position:	"D",	height:	"5 -10",	weight:	"165",	year:	2022,	image:"https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+# Recruit.create({player:	"Gleb Veremyev",	position:	"C",	height:	"5 -10",	weight:	"181",	year:	2022,	image:"https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+#2023
+# Recruit.create({player:	"Matt DiMarsico",	position:	"F",	height:	"5 -10",	weight:	"168",	year:	2023,	image:"https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+# Recruit.create({player:	"Jason Gallucci",	position:	"D",	height:	"5 -10",	weight:	"134",	year:	2023,	image:"https://www.collegehockeynews.com/images/logos/psu.png"	 , school_id:40})
+# Recruit.create({player:	"Carter Schade",	position:	"D",	height:	"5 -10",	weight:	"185",	year:	2023,	image:"https://www.collegehockeynews.com/images/logos/psu.png" , school_id:40})
+# Recruit.create({player:	"Michael Stenberg",	position:	"F",	height:	"5 -10",	weight:	"185",	year:	2023,	image:	"https://www.collegehockeynews.com/images/logos/psu.png" , school_id:40})
 
 
 
