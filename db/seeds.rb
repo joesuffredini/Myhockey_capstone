@@ -84,30 +84,30 @@ Recruit.create({player:	"Michael Stenberg",	position:	"F",	height:	"5 -10",	weig
 
 
 # This is for D1 College teams seeding
-  @teams = HTTP.get("http://api.sportradar.us/ncaamh-t3/league/hierarchy.json?sports_api[:api_key]")
-  @teams_info = @teams.parse
-  n = 0
-  i = 0
-  @d1teams = []
-  while n < 7
-      while i < @teams_info["divisions"][1]["conferences"][n]["teams"].length
-        teams = @teams_info["divisions"][1]["conferences"][n]["teams"][i]    
-        i = i + 1
-        @d1teams << teams
-      end
-    n = n + 1
-    i = 0
-  end
+  # @teams = HTTP.get("http://api.sportradar.us/ncaamh-t3/league/hierarchy.json?sports_api[:api_key]")
+  # @teams_info = @teams.parse
+  # n = 0
+  # i = 0
+  # @d1teams = []
+  # while n < 7
+  #     while i < @teams_info["divisions"][1]["conferences"][n]["teams"].length
+  #       teams = @teams_info["divisions"][1]["conferences"][n]["teams"][i]    
+  #       i = i + 1
+  #       @d1teams << teams
+  #     end
+  #   n = n + 1
+  #   i = 0
+  # end
 
-  @d1teams.map do |d1team|
-    School.create!(
-      teamid:  d1team["id"],
-      name: d1team["market"],
-      nickname: d1team["name"],
-      rink: d1team["venue"]["name"],
-      enrollment: d1team["venue"]["capacity"],
-    )
-  end
+  # @d1teams.map do |d1team|
+  #   School.create!(
+  #     teamid:  d1team["id"],
+  #     name: d1team["market"],
+  #     nickname: d1team["name"],
+  #     rink: d1team["venue"]["name"],
+  #     enrollment: d1team["venue"]["capacity"],
+  #   )
+  # end
 
 
   # # This is for roster seeding
