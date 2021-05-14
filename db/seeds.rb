@@ -4,7 +4,7 @@
 #  This is for Recruits seeding
 
 
-User.create({name: "Dante Suffredini", city:"Detroit", state:"MI", birthdate:"08/10/1995", age:45, height:"5 9", weight:165, shoots: "L", team: "Victory Honda", coach:"Brian Burke", password:"password" })
+User.create({name: "Dante Suffredini", city:"Detroit", state:"MI", birthdate:"08/10/1995", age:45, height:"5 9", weight:165, shoots: "L", team: "Victory Honda", coach:"Brian Burke", password:"password", email:"dsuff@example.com" })
 
 # Michigan State Recruits
 #2021
