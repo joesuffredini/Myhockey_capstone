@@ -6,6 +6,9 @@
 
 User.create({name: "Dante Suffredini", city:"Detroit", state:"MI", birthdate:"08/10/1995", age:45, height:"5 9", weight:165, shoots: "L", team: "Victory Honda", coach:"Brian Burke", password:"password", email:"dsuff@example.com" })
 
+Recruit.create({player:	"Matt Basgall",	position:	"D",	height:	"6 -3",	weight:	"190",	year:	2021,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png", school_id:38})
+
+
 # Michigan State Recruits
 #2021
 # Recruit.create({player:	"Matt Basgall",	position:	"D",	height:	"6 -3",	weight:	"190",	year:	2021,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png", school_id:38})
@@ -85,20 +88,20 @@ User.create({name: "Dante Suffredini", city:"Detroit", state:"MI", birthdate:"08
 
 
 # This is for D1 College teams seeding
-  @teams = HTTP.get("http://api.sportradar.us/ncaamh-t3/league/hierarchy.json?sports_api[:api_key]")
-  @teams_info = @teams.parse
-  n = 0
-  i = 0
-  @d1teams = []
-  while n < 7
-      while i < @teams_info["divisions"][1]["conferences"][n]["teams"].length
-        teams = @teams_info["divisions"][1]["conferences"][n]["teams"][i]    
-        i = i + 1
-        @d1teams << teams
-      end
-    n = n + 1
-    i = 0
-  end
+  # @teams = HTTP.get("http://api.sportradar.us/ncaamh-t3/league/hierarchy.json?sports_api[:api_key]")
+  # @teams_info = @teams.parse
+  # n = 0
+  # i = 0
+  # @d1teams = []
+  # while n < 7
+  #     while i < @teams_info["divisions"][1]["conferences"][n]["teams"].length
+  #       teams = @teams_info["divisions"][1]["conferences"][n]["teams"][i]    
+  #       i = i + 1
+  #       @d1teams << teams
+  #     end
+  #   n = n + 1
+  #   i = 0
+  # end
 
   # @d1teams.map do |d1team|
   #   School.create!(
