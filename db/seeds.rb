@@ -6,7 +6,7 @@
 
 User.create({name: "Dante Suffredini", city:"Detroit", state:"MI", birthdate:"08/10/1995", age:45, height:"5 9", weight:165, shoots: "L", team: "Victory Honda", coach:"Brian Burke", password:"password", email:"dsuff@example.com" })
 
-Recruit.create({player:	"Matt Basgall",	position:	"D",	height:	"6 -3",	weight:	"190",	year:	2021,	image:	 "https://www.collegehockeynews.com/images/logos/msu.png", school_id:38})
+Recruit.create({player:	"Matt Basgall",	position:	"D",	height:	"6 -3",	weight:	"190",	year:	2021,	image_url:	 "https://www.collegehockeynews.com/images/logos/msu.png", school_id:38})
 
 
 # Michigan State Recruits
